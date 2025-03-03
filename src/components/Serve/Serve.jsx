@@ -24,11 +24,11 @@ const Serve = ({ type }) => {
         >
             <motion.h1 style={{ y: ytext }}>{type === "services" ? "Skills" : "Projects"}</motion.h1>
             <motion.div className='mountains'
-                style={{ backgroundImage: `url("/mountains.png")` }}></motion.div>
+                style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/mountains.png")` }}></motion.div>
             <motion.div className='planets'
-                style={{ backgroundImage: type === "services" ? `url("/planets.png")` : `url("/sun.png")`, y: yBg }}></motion.div>
+                style={{ backgroundImage: type === "services" ? `url("${process.env.PUBLIC_URL}/planets.png")` : `url("${process.env.PUBLIC_URL}/sun.png")`, y: yBg }}></motion.div>
             <motion.div className='stars'
-                style={{ backgroundImage: `url("/stars.png")`, x: yBg }}></motion.div>
+                style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/stars.png")`, x: yBg }}></motion.div>
         </div>
     )
 };

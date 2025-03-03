@@ -35,10 +35,6 @@ const slidervariants = {
     },
 };
 const Hero = () => {
-    const handleDownloadCV = () => {
-        // Logic to trigger download of the resume
-        window.open('/path/to/your/resume.pdf', '_blank');
-    };
     return (
         <div className='hero'>
             
@@ -46,16 +42,14 @@ const Hero = () => {
                 Software Engineer
             </motion.div>
             <motion.div className='imageContainer' variants={variants} initial="initial" animate="animate">
-                <img src="/myimage3.png" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/myimage3.png`} alt="My Image" />;
+
             </motion.div>
             <Sidebar />
             <div className="wrapper">
                 <motion.div className="text" variants={variants} initial="initial" animate="animate" >
                 <div className='name-with-button'>
                         <motion.h2 variants={variants}>SASI KUMAR A</motion.h2>
-                        {/* <motion.div className='button1'>
-                            <a href='#' onClick={handleDownloadCV}>Download CV</a>
-                        </motion.div> */}
                     </div>
                     <motion.h1 variants={variants}>Full Stack Developer and Software Engineer</motion.h1>
                     <motion.div className="button" >

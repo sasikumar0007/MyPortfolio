@@ -1,6 +1,5 @@
 import Skillscard from '../Skillscard/Skillscard';
 import './Services.scss'
-import { motion, } from "framer-motion";
 import { useState } from "react"
 import { SKILLS } from "../../utils/data"
 import Skillcardinfo from '../Skillcardinfo/Skillcardinfo';

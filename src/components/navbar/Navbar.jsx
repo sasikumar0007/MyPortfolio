@@ -28,7 +28,7 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </a>
 
-                    <a href="#">
+                    <a href="https://www.instagram.com/sa_.zy._/?hl=en">
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </a>
                 </motion.div>

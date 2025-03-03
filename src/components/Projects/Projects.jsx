@@ -6,7 +6,7 @@ const items = [
   {
     id: 1,
     title: "FitLife",
-    img: "./fitness.png",
+    img: `${process.env.PUBLIC_URL}/fitness.png`,
     desc: "FitLife offers 1000+ exercises, enhanced by an AI-powered trainer for real-time rep counting (60% accuracy) and YouTube-integrated workouts, ensuring a smarter and more engaging fitness journey.",
     url: "https://github.com/sasikumar0007/FitLife" // Add your actual demo link here
   },
@@ -14,9 +14,9 @@ const items = [
   {
     id: 2,
     title: "MyPortfolio",
-    img: "tthp",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores maxime illo in sapiente, recusandae deleniti molestias rem libero optio temporibus dolores officiis commodi nisi laudantium ullam, placeat nesciunt? Sit, velit.",
-    url: "https://salesforecasting.com"
+    img: `${process.env.PUBLIC_URL}/Myport.png`,
+    desc: "An interactive portfolio built with React and Framer Motion, showcasing my projects, skills, and experience with smooth animations and seamless navigation.",
+    url: "https://github.com/sasikumar0007/MyPortfolio",
   }
 ];
 
@@ -40,7 +40,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             {/* Open the demo in a new tab */}
-            <button onClick={() => window.open(item.url, "_blank")}>See demo</button>
+            <button onClick={() => window.open(item.url, "_blank")}>See Code</button>
           </motion.div>
         </div>
       </div>
