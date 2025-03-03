@@ -1,6 +1,6 @@
 import "../sidebar.scss"
 import { motion } from "framer-motion"
-const items = ['Homepage', 'Services', 'About','Projects', 'Contact']
+const items = ['Homepage', 'About','SkillSet','Projects', 'Contact']
 
 const variants = {
     open: {
