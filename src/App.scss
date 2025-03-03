@@ -1,0 +1,59 @@
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior:smooth;
+}
+
+// @mixin mobile{
+//   @media(max-width:535px){
+//     @content;
+//   }
+// }
+// @mixin tab{
+//   @media(max-width:868px){
+//     @content;
+//   }
+// }
+// @mixin laptop{
+//   @media(max-width:1124px){
+//     @content;
+//   }
+// }
+@mixin mobile {
+  @media (max-width: 545px) { // 0 to 545px
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (min-width: 546px) and (max-width: 868px) { // 546px to 868px
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 869px) and (max-width: 1124px) { // 869px to 1124px
+    @content;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM sans",sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body{
+  background-color: #0c0c1d;
+  color: lightgray;
+  
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+}

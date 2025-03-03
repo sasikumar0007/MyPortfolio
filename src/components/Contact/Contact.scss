@@ -1,0 +1,115 @@
+@import "../../App.scss";
+.Contact{
+    height: 100%;
+    max-width: 1066px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @include tab{
+        width: 100%;
+    }
+    @include mobile{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+
+    .text{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @include tab{
+            gap: 35px;
+            margin-top: -100px;
+            margin-left: 40px;
+        }
+        @include mobile{
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            padding-top: 60px;
+    
+        }
+        h1{
+            font-size: 60px;
+            line-height: 50px;
+            color: orange;
+            @include tab{
+                font-size: 36px;
+            }
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        h2{
+            @include mobile{
+                font-size: 20px;
+            }
+        }
+        span{
+            color: grey;
+            font-weight: 300;
+        }
+    }
+    .form{
+        flex:1;
+        position: relative;
+        // background-color: aqua;
+        @include tab{
+            margin-top: 50px;
+            width: 50%;
+            padding: 30px;
+            margin-left: -200px;
+        }
+        @include mobile{
+            margin-top: -440px;
+            width: 100%;
+            margin-left: -100px;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        .phone{
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            
+        }
+        form{
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include tab{
+            padding-left: 50px;
+        }
+        @include mobile{
+            padding-top: 80px;
+            margin-left: 80px;
+        }
+            input,textarea{
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 15px;
+            border: 1px solid white;
+            color:white;
+            @include mobile{
+                padding: 10px;
+            }
+            }
+            button{
+            background-color: orange;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            border-radius: 3rem;
+            @include mobile{
+                padding: 10px;
+            }
+            }
+        }
+    }
+}

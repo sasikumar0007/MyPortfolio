@@ -1,0 +1,51 @@
+@import "../../App.scss";
+.skills-info-card{
+
+    min-height: 15rem;
+    width: 500px;
+    margin-left: 100px;
+    border-radius: 2rem;
+    border: 1.5px solid #6751b9;
+    // background: #0c0c1d;
+    background: linear-gradient(180deg, #1e1e43, #0c0c1d);
+    backdrop-filter:blur(1rem);
+    @include tab{
+        min-height: 2px;
+        align-items: center;
+        margin-left: 50px;
+    }
+    @include mobile{
+        width: 300px;
+        align-items: center;
+        margin:auto;
+    }
+
+    h6{
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.8rem 9rem;
+        background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: 1.5px solid #6751b9;
+        @include mobile{
+            display: flex;
+            align-items: center;
+            padding: 1rem 5rem;
+        }
+    }
+    .skills-info-content{
+        padding: 2rem;
+    }
+    .skills-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skill-info p{
+        font-size: 1rem;
+        padding: 0.5rem;
+        font-weight: 300;
+    }
+}
