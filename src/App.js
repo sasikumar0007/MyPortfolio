@@ -14,7 +14,7 @@ function App() {
         <Hero />
       </section>
       <section id='About'> <About /> </section>
-      <section id='Services'><Serve type="services"/></section>
+      <section id='SkillSet'><Serve type="services"/></section>
       <section><Services /></section>
       <section id="Projects"><Serve type="portfolio"/></section>
       <Projects /> 
