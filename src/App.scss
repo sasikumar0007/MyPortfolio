@@ -3,21 +3,7 @@ html{
   scroll-behavior:smooth;
 }
 
-// @mixin mobile{
-//   @media(max-width:535px){
-//     @content;
-//   }
-// }
-// @mixin tab{
-//   @media(max-width:868px){
-//     @content;
-//   }
-// }
-// @mixin laptop{
-//   @media(max-width:1124px){
-//     @content;
-//   }
-// }
+
 @mixin mobile {
   @media (max-width: 545px) { // 0 to 545px
     @content;
