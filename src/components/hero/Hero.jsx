@@ -42,7 +42,7 @@ const Hero = () => {
                 Software Engineer
             </motion.div>
             <motion.div className='imageContainer' variants={variants} initial="initial" animate="animate">
-            <img src={`${process.env.PUBLIC_URL}/myimage3.png`} alt="My Image" />;
+            <img src={`${process.env.PUBLIC_URL}/myimage2.png`} alt="My Image" />;
 
             </motion.div>
             <Sidebar />

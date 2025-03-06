@@ -12,17 +12,17 @@
         right: 0;
         @include mobile{
             height: 100%;
-            width: 100%;
+            width: 90%;
             left: 10%;         
             top: unset;
-            bottom: -60px;           
+            bottom: -100px;           
             object-fit: cover;
         }
         @include tab{
             height: 60%;
             width: 60%;
             top: unset;
-            bottom: 400px;  
+            bottom: 300px;  
             left: 25%;         
             object-fit: cover;
         }
