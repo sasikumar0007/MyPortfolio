@@ -4,22 +4,7 @@ import { useState } from "react"
 import { SKILLS } from "../../utils/data"
 import Skillcardinfo from '../Skillcardinfo/Skillcardinfo';
 const Services = () => {
-    // const variants = {
-    //     initial: {
-    //         x: -500,
-    //         y: 0,
-    //         opacity: 0,
-    //     },
-    //     animate: {
-    //         x: 0,
-    //         y: 0,
-    //         opacity: 1,
-    //         transition: {
-    //             duration: 1,
-    //             staggerchildren: 0.1,
-    //         },
-    //     },
-    // }
+   
     const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
 
 

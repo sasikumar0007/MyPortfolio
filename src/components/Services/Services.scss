@@ -7,21 +7,19 @@
     
     h5 {
         color: orange;
-        font-size: 4vw;
+        font-size: 7vw;
         margin-bottom: 2vw;
     }
 
     @include mobile {
         padding: 10vw;
         h5 {
-            font-size: 2vw;
             margin-bottom: 5vw;
         }
     }
 
     @include laptop {
         h5 {
-            font-size: 4vw;
             margin-bottom: 7vw;
         }
     }
